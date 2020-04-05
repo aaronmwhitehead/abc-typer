@@ -48,11 +48,14 @@ $(document).keypress(function(event){
                     }
 
                     if(bestSec / 10 < 1) {
-                        $('.best-time').html(`0${bestSec}.${bestMil}`)
-                    } else {
-                        $('.best-time').html(`${bestSec}.${bestMil}`)
+                        bestSec = `0${bestSec}`;
+                    } 
+                    
+                    if(bestMil / 10 < 1) {
+                        bestMil = `0${bestMil}`;
                     }
 
+                    $('.best-time').html(`${bestSec}.${bestMil}`)
                     
                 } else {
                     i++;
