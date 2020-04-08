@@ -30,6 +30,7 @@ $(document).keypress(function(event){
 
         default:
             var currLetter = String.fromCharCode(event.which).toUpperCase();
+            $('#text').val('');
 
             if(currLetter == letters[i]) {
                 $(`.${currLetter}`).addClass('typed');

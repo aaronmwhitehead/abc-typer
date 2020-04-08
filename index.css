@@ -73,4 +73,17 @@ h1 {
   .best-time-container span {
     font-size: 1.6em; }
 
+
+@media screen and (max-width : 1920px){
+  #text{
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width : 906px){
+  #text{
+    visibility: visible;
+  }
+ }
+
 /*# sourceMappingURL=index.css.map */
