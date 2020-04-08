@@ -80,9 +80,46 @@ h1 {
   }
 }
 
+/*Mobile styles*/
 @media screen and (max-width : 906px){
+  .timer {
+    margin-top: 50px;
+    font-size: 1.1em; 
+  }
+  .timer .time {
+    font-size: 1.1em;
+  }
+  
+  .letters-container {
+    margin: 20px;
+  }
+
+  .letters-container .letter-container {
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+  }
+
+  .letters-container span {
+    font-size: .8em;
+  }
+
+  .best-time-container {
+    width: 90px;
+    height: 40px;
+    border-radius: 8px;
+  }
+
+  .best-time-container span {
+    font-size: .8em; 
+  }
+
   #text{
     visibility: visible;
+  }
+
+  .inst {
+    font-size: .8em;
   }
  }
 
