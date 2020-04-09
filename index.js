@@ -43,7 +43,7 @@ $(document).keypress(function(event){
                     playing = false;
                     clearInterval(interval);
 
-                    if(bestSec+bestMil/100 > sec+mil/100) {
+                    if((bestSec*100+bestMil) > (sec*100+mil)) {
                         bestSec = sec;
                         bestMil = mil;
                     }
@@ -56,6 +56,7 @@ $(document).keypress(function(event){
                         bestMil = `0${bestMil}`;
                     }
 
+                    $('.best-time').html(``);
                     $('.best-time').html(`${bestSec}.${bestMil}`)
                     
                 } else {
