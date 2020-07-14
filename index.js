@@ -49,7 +49,7 @@ $(document).keypress(function(event){
                     }
 
                     if(bestSec / 10 < 1) {
-                        bestSec = `0${bestSec}`;
+                        bestSec = `${bestSec}`;
                     } 
                     
                     if(bestMil / 10 < 1) {
